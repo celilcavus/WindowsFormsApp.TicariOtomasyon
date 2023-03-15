@@ -430,6 +430,9 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.txtBankaTarih);
             this.Controls.Add(this.txtBankaHesapTuru);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(876, 548);
+            this.MinimumSize = new System.Drawing.Size(876, 548);
             this.Name = "FrmBanka";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banka";

@@ -39,7 +39,13 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnXls = new DevExpress.XtraEditors.SimpleButton();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOTTARIH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOTBASLIK = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOTDETAY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNOTOLUSTURAN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.tBLNOTLARBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnMht = new DevExpress.XtraEditors.SimpleButton();
@@ -50,22 +56,16 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtNotTarih = new DevExpress.XtraEditors.DateEdit();
-            this.tBLNOTLARBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNOTTARIH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNOTBASLIK = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNOTDETAY = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNOTOLUSTURAN = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotBaslik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLNOTLARBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotOlusturan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotTarih.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotTarih.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLNOTLARBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnKaydet
@@ -161,6 +161,41 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView1_RowClick);
             // 
+            // colID
+            // 
+            this.colID.FieldName = "ID";
+            this.colID.Name = "colID";
+            this.colID.Visible = true;
+            this.colID.VisibleIndex = 0;
+            // 
+            // colNOTTARIH
+            // 
+            this.colNOTTARIH.FieldName = "NOTTARIH";
+            this.colNOTTARIH.Name = "colNOTTARIH";
+            this.colNOTTARIH.Visible = true;
+            this.colNOTTARIH.VisibleIndex = 1;
+            // 
+            // colNOTBASLIK
+            // 
+            this.colNOTBASLIK.FieldName = "NOTBASLIK";
+            this.colNOTBASLIK.Name = "colNOTBASLIK";
+            this.colNOTBASLIK.Visible = true;
+            this.colNOTBASLIK.VisibleIndex = 2;
+            // 
+            // colNOTDETAY
+            // 
+            this.colNOTDETAY.FieldName = "NOTDETAY";
+            this.colNOTDETAY.Name = "colNOTDETAY";
+            this.colNOTDETAY.Visible = true;
+            this.colNOTDETAY.VisibleIndex = 3;
+            // 
+            // colNOTOLUSTURAN
+            // 
+            this.colNOTOLUSTURAN.FieldName = "NOTOLUSTURAN";
+            this.colNOTOLUSTURAN.Name = "colNOTOLUSTURAN";
+            this.colNOTOLUSTURAN.Visible = true;
+            this.colNOTOLUSTURAN.VisibleIndex = 4;
+            // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.tBLNOTLARBindingSource;
@@ -172,6 +207,10 @@
             this.gridControl1.TabIndex = 108;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            // 
+            // tBLNOTLARBindingSource
+            // 
+            this.tBLNOTLARBindingSource.DataSource = typeof(WindowsFormsApp.TicariOtomasyon.Model.TBLNOTLAR);
             // 
             // groupControl1
             // 
@@ -272,49 +311,12 @@
             this.txtNotTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtNotTarih.Properties.DisplayFormat.FormatString = "";
+            this.txtNotTarih.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtNotTarih.Properties.EditFormat.FormatString = "";
+            this.txtNotTarih.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtNotTarih.Properties.MaskSettings.Set("mask", "");
             this.txtNotTarih.Size = new System.Drawing.Size(180, 20);
             this.txtNotTarih.TabIndex = 116;
-            // 
-            // tBLNOTLARBindingSource
-            // 
-            this.tBLNOTLARBindingSource.DataSource = typeof(WindowsFormsApp.TicariOtomasyon.Model.TBLNOTLAR);
-            // 
-            // colID
-            // 
-            this.colID.FieldName = "ID";
-            this.colID.Name = "colID";
-            this.colID.Visible = true;
-            this.colID.VisibleIndex = 0;
-            // 
-            // colNOTTARIH
-            // 
-            this.colNOTTARIH.FieldName = "NOTTARIH";
-            this.colNOTTARIH.Name = "colNOTTARIH";
-            this.colNOTTARIH.Visible = true;
-            this.colNOTTARIH.VisibleIndex = 1;
-            // 
-            // colNOTBASLIK
-            // 
-            this.colNOTBASLIK.FieldName = "NOTBASLIK";
-            this.colNOTBASLIK.Name = "colNOTBASLIK";
-            this.colNOTBASLIK.Visible = true;
-            this.colNOTBASLIK.VisibleIndex = 3;
-            // 
-            // colNOTDETAY
-            // 
-            this.colNOTDETAY.FieldName = "NOTDETAY";
-            this.colNOTDETAY.Name = "colNOTDETAY";
-            this.colNOTDETAY.Visible = true;
-            this.colNOTDETAY.VisibleIndex = 4;
-            // 
-            // colNOTOLUSTURAN
-            // 
-            this.colNOTOLUSTURAN.FieldName = "NOTOLUSTURAN";
-            this.colNOTOLUSTURAN.Name = "colNOTOLUSTURAN";
-            this.colNOTOLUSTURAN.Visible = true;
-            this.colNOTOLUSTURAN.VisibleIndex = 5;
             // 
             // FrmNotlar
             // 
@@ -331,19 +333,23 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.txtNotTarih);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(876, 548);
+            this.MinimumSize = new System.Drawing.Size(876, 548);
             this.Name = "FrmNotlar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNotlar";
             this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtNotBaslik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLNOTLARBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtNotOlusturan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotTarih.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotTarih.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBLNOTLARBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

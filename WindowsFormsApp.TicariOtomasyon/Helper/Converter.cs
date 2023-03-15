@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraGrid;
+﻿using DevExpress.Pdf.Native.BouncyCastle.Asn1;
+using DevExpress.XtraGrid;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -14,7 +15,9 @@ namespace WindowsFormsApp.TicariOtomasyon.Helper
         {
 
             dialog.Title = "CONVERT";
-            string yol = string.Concat(DesktopPath, "\\", string.Concat("result", ".", type));
+            dialog.OverwritePrompt = false;
+            string name = dialog.FileName = "result";
+            string yol = string.Concat(DesktopPath, "\\", string.Concat(name, ".", type));
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
