@@ -80,8 +80,10 @@
             // 
             // txtMesaj
             // 
+            this.txtMesaj.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
             this.txtMesaj.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.txtMesaj.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtMesaj.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Pixel;
             this.txtMesaj.Location = new System.Drawing.Point(97, 79);
             this.txtMesaj.Name = "txtMesaj";
             this.txtMesaj.Options.DocumentSaveOptions.CurrentFormat = DevExpress.XtraRichEdit.DocumentFormat.PlainText;

@@ -30,12 +30,12 @@ namespace WindowsFormsApp.TicariOtomasyon.Views
             //MailMessage message = new MailMessage();
             //SmtpClient client = new SmtpClient();
 
-            //client.Credentials = new System.Net.NetworkCredential("celilcavus13@gmail.com", "Sensizlik123");
+            //client.Credentials = new System.Net.NetworkCredential("mail, "password");
             //client.Port = 587;
             //client.Host = "smtp.hotmail.com";
             //client.EnableSsl = true;
             //message.To.Add(txtMail.Text);
-            //message.From = new MailAddress("celilcavus13@gmail.com");
+            //message.From = new MailAddress("mail");
             //message.Subject = txtKonu.Text;
             //message.Body = txtMesaj.Text;
             //client.Send(message);
