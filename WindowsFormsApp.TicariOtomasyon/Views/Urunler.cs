@@ -137,7 +137,6 @@ namespace WindowsFormsApp.TicariOtomasyon.Views
 
         private void gridView1_RowClick(object sender, RowClickEventArgs e)
         {
-            clearAll();
             ID = int.Parse(gridView1.GetFocusedRowCellValue(colID.ToString()).ToString());
             txtUrunAdi.Text = gridView1.GetFocusedRowCellValue(colURUNAD).ToString();
             txtUrunMarka.Text = gridView1.GetFocusedRowCellValue(colMARKA).ToString();
